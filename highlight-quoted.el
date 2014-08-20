@@ -91,6 +91,7 @@ re-enabled."
     (font-lock-remove-keywords nil highlight-quoted--buffer-keywords)
     (kill-local-variable 'highlight-quoted--buffer-keywords)))
 
+;;;###autoload
 (define-minor-mode highlight-quoted-mode
   "Highlight Lisp quotes and quoted symbols.
 

@@ -106,7 +106,7 @@ nil, and toggle it if ARG is `toggle'.
   (when font-lock-mode
     (if (fboundp 'font-lock-flush)
         (font-lock-flush)
-      (font-lock-mode 1))))
+      (with-no-warnings (font-lock-fontify-buffer)))))
 
 (provide 'highlight-quoted)
 ;;; highlight-quoted.el ends here
